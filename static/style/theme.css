@@ -13,7 +13,7 @@
  }
  
  html {
-     background-color: #eee;
+     background-color: #fff;
  }
  
  body {
@@ -23,6 +23,7 @@
  .container {
      width: 100%;
      margin: auto;
+     max-width: 1000px;
  }
  
  #menu {
@@ -56,7 +57,7 @@
      line-height: 42px;
      text-align: center;
      color: #666;
-     background: url(./theme/menu.png) no-repeat right bottom;
+     background: url(./theme/menu.png) no-repeat left bottom;
  }
  
  #menu ul li a:link, #menu ul li a:visited {
@@ -96,6 +97,7 @@
      width: 100%;
      border: none;
      border-top: 1px solid #ccc;
+     border-left: 1px solid #ccc;
  }
  
  #project table tr td, #project table tr th {
@@ -105,10 +107,14 @@
      border-right: 1px solid #ccc;
      color: #333;
  }
- 
- #project table tr td:last-child, #project table tr th:last-child {
-     border-right: none;
+
+#project table tr th {
+     background-color: #eee;
  }
+ 
+ /*#project table tr td:last-child, #project table tr th:last-child {
+     border-right: none;
+ }*/
  
  #project table tr td a {
      color: #4078c0;
