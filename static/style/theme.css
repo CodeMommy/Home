@@ -73,7 +73,7 @@
      width: 160px;
      height: 160px;
      background-size: 100%;
-     margin: 20px auto;
+     margin: 40px auto 20px auto;
  }
  
  #about .title {
@@ -86,7 +86,7 @@
  
  #about .description {
      text-align: center;
-     margin-bottom: 20px;
+     margin-bottom: 40px;
  }
  
  #project {
