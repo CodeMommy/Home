@@ -73,34 +73,35 @@
      width: 160px;
      height: 160px;
      background-size: 100%;
-     margin: 40px auto 20px auto;
+     margin: 40px auto 0px auto;
  }
  
  #about .title {
      text-align: center;
      color: #333;
-     margin-bottom: 20px;
+     margin-top: 20px;
      font-size: 40px;
      font-weight: bold;
  }
  
  #about .description {
      text-align: center;
-     margin-bottom: 40px;
+     margin-top: 20px;
  }
  
- #project {
+ .project {
      background-color: #fff;
+     margin-top: 30px;
  }
  
- #project table {
+ .project table {
      width: 100%;
      border: none;
      border-top: 1px solid #ccc;
      border-left: 1px solid #ccc;
  }
  
- #project table tr td, #project table tr th {
+ .project table tr td, .project table tr th {
      padding: 10px;
      text-align: left;
      border-bottom: 1px solid #ccc;
@@ -108,29 +109,29 @@
      color: #333;
  }
 
-#project table tr th {
+.project table tr th {
      background-color: #eee;
  }
  
- /*#project table tr td:last-child, #project table tr th:last-child {
+ /*.project table tr td:last-child, .project table tr th:last-child {
      border-right: none;
  }*/
  
- #project table tr td a {
+ .project table tr td a {
      color: #4078c0;
  }
  
- #project table tr td a:link, #project table tr td a:visited {
+ .project table tr td a:link, .project table tr td a:visited {
      text-decoration: none;
  }
  
- #project table tr td a:active, #project table tr td a:hover {
+ .project table tr td a:active, .project table tr td a:hover {
      text-decoration: underline;
  }
  
  #footer {
      text-align: center;
-     margin: 40px 0 20px 0;
+     margin: 30px 0 20px 0;
      color: #666;
      font-size: 16px;
  }
