@@ -73,7 +73,7 @@
      width: 160px;
      height: 160px;
      background-size: 100%;
-     margin: 40px auto 0px auto;
+     margin: 40px auto auto auto;
  }
  
  #about .title {
@@ -131,7 +131,7 @@
  
  #footer {
      text-align: center;
-     margin: 30px 0 20px 0;
+     margin: 20px 0;
      color: #666;
      font-size: 16px;
  }
