@@ -1,3 +1,11 @@
 # The Official Website of CodeMommy
 
-www.CodeMommy.com
+## Link
+
+[www.CodeMommy.com](http://www.codemommy.com)
+
+## Authors
+
+| Name | Identity | Social |
+| :--- | :------- | :----- |
+| Candison November | Creator  | [Website](http://www.kandisheng.com) - [GitHub](https://github.com/KanDisheng) |
