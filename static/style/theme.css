@@ -29,6 +29,12 @@
     padding: 70px 0 20px 0;
 }
 
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
 .circle {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
