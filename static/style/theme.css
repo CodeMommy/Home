@@ -1,7 +1,19 @@
+/**
+ * Replace
+ */
+
 * {
     -webkit-tap-highlight-color: transparent;
     font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif !important;
 }
+
+.dropdown-menu li a {
+    line-height: 30px;
+}
+
+/**
+ * Main
+ */
 
 .center {
     text-align: center;
@@ -10,15 +22,11 @@
 .about {
     background-color: #008cd6;
     color: #fff;
-    padding: 70px 0 20px 0;
+    padding: 71px 0 20px 0;
 }
 
 .circle {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-}
-
-.dropdown-menu li a{
-    line-height: 30px;
 }
