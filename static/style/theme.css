@@ -4,7 +4,7 @@
 
 * {
     -webkit-tap-highlight-color: transparent;
-    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif !important;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
 }
 
 .dropdown-menu li a {
@@ -28,11 +28,28 @@
 .footer {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 15px 0;
 }
 
 .circle {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+}
+
+.panel {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.label {
+    padding: 10px 30px;
+}
+
+.label, .panel, .navbar-toggle, .btn, .panel-heading, .panel-footer {
+    border-radius: 0;
+}
+
+h3 {
+    margin-top: 5px;
 }
