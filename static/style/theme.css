@@ -42,9 +42,9 @@
     -webkit-box-shadow: none;
 }
 
-.label {
-    padding: 10px 30px;
-}
+/*.label {*/
+/*padding: 10px 30px;*/
+/*}*/
 
 .label, .panel, .navbar-toggle, .btn, .panel-heading, .panel-footer {
     border-radius: 0;
@@ -54,22 +54,77 @@ h3 {
     margin-top: 5px;
 }
 
-.panel-success {
-    border-color: #5cb85c;
+/*.panel-success {*/
+/*border-color: #5cb85c;*/
+/*}*/
+
+/*.panel-success > .panel-heading {*/
+/*color: #fff;*/
+/*background-color: #5cb85c;*/
+/*border-color: #5cb85c;*/
+/*}*/
+
+/*.panel-warning {*/
+/*border-color: #f0ad4e;*/
+/*}*/
+
+/*.panel-warning > .panel-heading {*/
+/*color: #fff;*/
+/*background-color: #f0ad4e;*/
+/*border-color: #f0ad4e;*/
+/*}*/
+
+.list-group-item-heading {
+    margin-bottom: 0;
 }
 
-.panel-success > .panel-heading {
+.list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0;
+}
+
+.list-group-item.active1, .list-group-item.active1:focus, .list-group-item.active1:hover {
+    z-index: 2;
     color: #fff;
     background-color: #5cb85c;
     border-color: #5cb85c;
 }
 
-.panel-warning {
-    border-color: #f0ad4e;
-}
-
-.panel-warning > .panel-heading {
+.list-group-item.active2, .list-group-item.active2:focus, .list-group-item.active2:hover {
+    z-index: 2;
     color: #fff;
     background-color: #f0ad4e;
     border-color: #f0ad4e;
+}
+
+.list-group span.badge {
+    float: right;
+}
+
+.list-group-item-text {
+    margin-top: 8px;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+}
+
+iframe.members {
+    height: 206px;
+}
+
+iframe.github {
+    height: 65px;
+}
+
+@media screen and (min-width: 376px) {
+    iframe.members {
+        height: 206px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    iframe.members {
+        height: 315px;
+    }
 }
