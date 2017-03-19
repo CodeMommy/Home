@@ -107,6 +107,7 @@ h3 {
 #github {
     display: none;
 }
+
 #github .media img {
     width: 65px;
     height: 65px;
@@ -143,4 +144,9 @@ h3 {
     height: 20px;
     overflow: hidden;
     margin-top: 5px;
+}
+
+#member .panel-body {
+    padding-bottom: 5px;
+    padding-right: 5px;
 }
