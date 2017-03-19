@@ -4,19 +4,18 @@ $.ajax({
     jsonp: "callback",
     async: true,
     success: function (data) {
-        var user = data["user"];
         var html = "";
         html = html + '<div class="media">';
         html = html + '<div class="media-left">';
-        html = html + '<a href="' + user['url'] + '" title="' + user['name'] + '" target="_blank">';
-        html = html + '<img class="media-object" src="' + user['avatar'] + '" alt="' + user['name'] + '">';
+        html = html + '<a href="' + data['url'] + '" title="' + data['name'] + '" target="_blank">';
+        html = html + '<img class="media-object" src="//cache.shareany.com/?f=' + data['avatar'] + '" alt="' + data['name'] + '">';
         html = html + '</a>';
         html = html + '</div>';
         html = html + '<div class="media-body">';
-        html = html + '<a href="' + user['url'] + '" title="' + user['name'] + '" target="_blank">';
-        html = html + '<h4 class="media-heading">' + user['name'] + '</h4>';
+        html = html + '<a href="' + data['url'] + '" title="' + data['name'] + '" target="_blank">';
+        html = html + '<h4 class="media-heading">' + data['name'] + '</h4>';
         html = html + '</a>';
-        html = html + user['about'];
+        html = html + data['about'];
         html = html + '</div>';
         html = html + '</div>';
         $("#github .panel-body").html(html);
@@ -30,11 +29,11 @@ $.ajax({
     async: true,
     success: function (data) {
         var html = "<ul>";
-        $.each(data["members"], function (key, value) {
+        $.each(data, function (key, value) {
             html = html + '<li>';
             html = html + '<div class="avatar">';
             html = html + '<a href="' + value['url'] + '" target="_blank" title="' + value['name'] + '">';
-            html = html + '<img src="' + value['avatar'] + '" alt="' + value['name'] + '">';
+            html = html + '<img src="//cache.shareany.com/?f=' + value['avatar'] + '" alt="' + value['name'] + '">';
             html = html + '</a>';
             html = html + '</div>';
             html = html + '<div class="name">';
