@@ -2,6 +2,7 @@ $.ajax({
     url: "http://github.shareany.com/widget/user/codemommy",
     dataType: "jsonp",
     jsonp: "callback",
+    async: true,
     success: function (data) {
         var user = data["user"];
         var html = "";
@@ -23,9 +24,10 @@ $.ajax({
     }
 });
 $.ajax({
-    url: "http://github.shareany.com/widget/members/shareany",
+    url: "http://github.shareany.com/widget/members/codemommy",
     dataType: "jsonp",
     jsonp: "callback",
+    async: true,
     success: function (data) {
         var html = "<ul>";
         $.each(data["members"], function (key, value) {

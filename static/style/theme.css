@@ -134,12 +134,12 @@ h3 {
 }
 
 #member .avatar img {
-    width: 74px;
-    height: 74px;
+    width: 80px;
+    height: 80px;
 }
 
 #member .name {
-    width: 74px;
+    width: 80px;
     height: 20px;
     overflow: hidden;
     margin-top: 5px;
