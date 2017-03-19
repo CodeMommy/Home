@@ -104,27 +104,43 @@ h3 {
     margin-top: 8px;
 }
 
-iframe {
-    border: none;
-    width: 100%;
+#github {
+    display: none;
 }
-
-iframe.members {
-    height: 206px;
-}
-
-iframe.github {
+#github .media img {
+    width: 65px;
     height: 65px;
 }
 
-@media screen and (min-width: 376px) {
-    iframe.members {
-        height: 206px;
-    }
+#member {
+    display: none;
 }
 
-@media screen and (max-width: 375px) {
-    iframe.members {
-        height: 315px;
-    }
+#member ul, #member li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#member ul {
+    margin-right: -10px;
+}
+
+#member li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#member .avatar img {
+    width: 74px;
+    height: 74px;
+}
+
+#member .name {
+    width: 74px;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 5px;
 }
