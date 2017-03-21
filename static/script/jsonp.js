@@ -19,6 +19,12 @@ $(document).ready(function () {
             html = html + data['about'];
             html = html + '</div>';
             html = html + '</div>';
+            // html = html + '</br>';
+            // html = html + '<a class="btn btn-primary" target="_blank" type="button" href="' + data['url'] + '" title="' + data['name'] + '">';
+            // html = html + 'Repository <span class="badge">';
+            // html = html + data['countPublicRepository'];
+            // html = html + '</span>';
+            // html = html + '</a>';
             $("#github .panel-body").html(html);
             $("#github").show();
         }
@@ -45,8 +51,40 @@ $(document).ready(function () {
                 html = html + '</li>';
             });
             html = html + '</ul>';
-            $("#member .panel-body").html(html);
-            $("#member").show();
+            $("#members .panel-body").html(html);
+            $("#members").show();
+        }
+    });
+    $.ajax({
+        url: "http://github.shareany.com/widget/events/codemommy",
+        dataType: "jsonp",
+        jsonp: "callback",
+        async: true,
+        success: function (data) {
+            var newData = [];
+            var html = '<table class="table table-striped table-hover">';
+            $.each(data, function (key, value) {
+                if (value['type'] == 'PushEvent') {
+                    if (newData[value['repositoryName']] == undefined) {
+                        newData[value['repositoryName']] = value;
+                        html = html + '<tr>';
+                        html = html + '<td>';
+                        html = html + '<a href="https://github.com/' + value['repositoryName'] + '" target="_blank" title="' + value['repositoryName'] + '">';
+                        html = html + value['repositoryName'];
+                        html = html + '</a>';
+                        html = html + '</td>';
+                        html = html + '</tr>';
+                        html = html + '<tr>';
+                        html = html + '<td>';
+                        html = html + '<span class="label label-info" title="' + value['time'] + '">' + value['message'] + '</span>';
+                        html = html + '</td>';
+                        html = html + '</tr>';
+                    }
+                }
+            });
+            html = html + '</table>';
+            $("#events .panel-body").html(html);
+            $("#events").show();
         }
     });
 });

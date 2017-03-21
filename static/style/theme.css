@@ -7,34 +7,12 @@
     font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
 }
 
+h3 {
+    margin-top: 5px;
+}
+
 .dropdown-menu li a {
     line-height: 30px;
-}
-
-/**
- * Main
- */
-
-.center {
-    text-align: center;
-}
-
-.about {
-    background-color: #008cd6;
-    color: #fff;
-    padding: 71px 0 20px 0;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 0;
-}
-
-.circle {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
 }
 
 .panel {
@@ -42,37 +20,9 @@
     -webkit-box-shadow: none;
 }
 
-/*.label {*/
-/*padding: 10px 30px;*/
-/*}*/
-
 .label, .panel, .navbar-toggle, .btn, .panel-heading, .panel-footer {
     border-radius: 0;
 }
-
-h3 {
-    margin-top: 5px;
-}
-
-/*.panel-success {*/
-/*border-color: #5cb85c;*/
-/*}*/
-
-/*.panel-success > .panel-heading {*/
-/*color: #fff;*/
-/*background-color: #5cb85c;*/
-/*border-color: #5cb85c;*/
-/*}*/
-
-/*.panel-warning {*/
-/*border-color: #f0ad4e;*/
-/*}*/
-
-/*.panel-warning > .panel-heading {*/
-/*color: #fff;*/
-/*background-color: #f0ad4e;*/
-/*border-color: #f0ad4e;*/
-/*}*/
 
 .list-group-item-heading {
     margin-bottom: 0;
@@ -104,6 +54,31 @@ h3 {
     margin-top: 8px;
 }
 
+/**
+ * Main
+ */
+.center {
+    text-align: center;
+}
+
+.about {
+    background-color: #008cd6;
+    color: #fff;
+    padding: 71px 0 20px 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.circle {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
 #github {
     display: none;
 }
@@ -113,40 +88,52 @@ h3 {
     height: 65px;
 }
 
-#member {
+#members {
     display: none;
 }
 
-#member ul, #member li {
+#members ul, #member li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#member ul {
+#members ul {
     margin-right: -10px;
 }
 
-#member li {
+#members li {
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-#member .avatar img {
+#members .avatar img {
     width: 80px;
     height: 80px;
 }
 
-#member .name {
+#members .name {
     width: 80px;
     height: 20px;
     overflow: hidden;
     margin-top: 5px;
 }
 
-#member .panel-body {
+#members .panel-body {
     padding-bottom: 5px;
     padding-right: 5px;
+}
+
+#events .panel-body {
+    padding: 0;
+}
+
+#events .table {
+    margin-bottom: 0;
+}
+
+#events .table tr:first-child td {
+    border: none;
 }
