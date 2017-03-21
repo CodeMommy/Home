@@ -62,7 +62,7 @@ $(document).ready(function () {
         async: true,
         success: function (data) {
             var newData = [];
-            var html = '<table class="table table-striped table-hover">';
+            var html = '<table class="table table-striped">';
             $.each(data, function (key, value) {
                 if (value['type'] == 'PushEvent') {
                     if (newData[value['repositoryName']] == undefined) {
