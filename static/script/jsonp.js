@@ -76,7 +76,7 @@ $(document).ready(function () {
                         html = html + '</tr>';
                         html = html + '<tr>';
                         html = html + '<td>';
-                        html = html + '<span class="label label-info" title="' + value['time'] + '">' + value['message'] + '</span>';
+                        html = html + '<span data-toggle="tooltip" data-placement="top" class="label label-info" title="' + value['time'] + '">' + value['message'] + '</span>';
                         html = html + '</td>';
                         html = html + '</tr>';
                     }
@@ -85,6 +85,7 @@ $(document).ready(function () {
             html = html + '</table>';
             $("#events .panel-body").html(html);
             $("#events").show();
+            $('[data-toggle="tooltip"]').tooltip();
         }
     });
 });
