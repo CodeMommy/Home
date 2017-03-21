@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
     $.ajax({
-        url: "http://github.shareany.com/widget/organization/information/codemommy",
+        url: "http://github.shareany.com/widget/organization/information/CodeMommy",
         dataType: "jsonp",
         jsonp: "callback",
         async: true,
@@ -31,7 +31,7 @@ $(document).ready(function () {
         }
     });
     $.ajax({
-        url: "http://github.shareany.com/widget/organization/events/codemommy",
+        url: "http://github.shareany.com/widget/organization/events/CodeMommy",
         dataType: "jsonp",
         jsonp: "callback",
         async: true,
@@ -66,7 +66,7 @@ $(document).ready(function () {
         }
     });
     $.ajax({
-        url: "http://github.shareany.com/widget/organization/members/codemommy",
+        url: "http://github.shareany.com/widget/organization/members/CodeMommy",
         dataType: "jsonp",
         jsonp: "callback",
         async: true,
