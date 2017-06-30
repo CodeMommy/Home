@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
     $.ajax({
-        url: "http://github.shareany.com/widget/organization/information/CodeMommy",
+        url: "http://github.shareany.com/widget/organization/information/CodeMommy?V=" + interfaceCache,
         dataType: "jsonp",
         jsonp: "callback",
         async: true,
@@ -31,32 +31,36 @@ $(document).ready(function () {
         }
     });
     $.ajax({
-        url: "http://github.shareany.com/widget/organization/events/CodeMommy",
+        url: "http://github.shareany.com/widget/organization/events/CodeMommy?V=" + interfaceCache,
         dataType: "jsonp",
         jsonp: "callback",
         async: true,
         success: function (data) {
             var newData = [];
             var html = '<table class="table table-striped">';
+            var count = 0;
             $.each(data, function (key, value) {
                 if (value['type'] == 'PushEvent') {
                     if (newData[value['repositoryName']] == undefined) {
-                        newData[value['repositoryName']] = value;
-                        html = html + '<tr>';
-                        html = html + '<td>';
-                        html = html + '<a href="https://github.com/' + value['repositoryName'] + '" target="_blank" title="' + value['repositoryName'].split("/")[1] + '">';
-                        html = html + value['repositoryName'].split("/")[1];
-                        html = html + '</a>';
-                        html = html + '<span style="float:right;">';
-                        html = html + value['time'];
-                        html = html + '</span>';
-                        html = html + '</td>';
-                        html = html + '</tr>';
-                        html = html + '<tr>';
-                        html = html + '<td>';
-                        html = html + '<span class="label label-info" title="' + value['message'] + '">' + value['message'] + '</span>';
-                        html = html + '</td>';
-                        html = html + '</tr>';
+                        count = count + 1;
+                        if (count <= eventCount) {
+                            newData[value['repositoryName']] = value;
+                            html = html + '<tr>';
+                            html = html + '<td>';
+                            html = html + '<a href="https://github.com/' + value['repositoryName'] + '" target="_blank" title="' + value['repositoryName'].split("/")[1] + '">';
+                            html = html + value['repositoryName'].split("/")[1];
+                            html = html + '</a>';
+                            html = html + '<span style="float:right;">';
+                            html = html + value['time'];
+                            html = html + '</span>';
+                            html = html + '</td>';
+                            html = html + '</tr>';
+                            html = html + '<tr>';
+                            html = html + '<td>';
+                            html = html + '<span class="label1 label-info1 event" title="' + value['message'] + '">' + value['message'] + '</span>';
+                            html = html + '</td>';
+                            html = html + '</tr>';
+                        }
                     }
                 }
             });

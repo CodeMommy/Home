@@ -4,7 +4,11 @@
 
 * {
     -webkit-tap-highlight-color: transparent;
-    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, Verdana, sans-serif, "Microsoft YaHei";
+}
+
+body {
+    background: #eee;
 }
 
 h3 {
@@ -140,4 +144,8 @@ h3 {
 
 #events .table tr:first-child td {
     border: none;
+}
+
+#events .event {
+    color: #666;
 }
