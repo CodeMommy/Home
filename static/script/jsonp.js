@@ -70,7 +70,7 @@ $(document).ready(function () {
         }
     });
     $.ajax({
-        url: "http://github.shareany.com/widget/organization/members/CodeMommy",
+        url: "http://github.shareany.com/widget/organization/members/CodeMommy?V=" + interfaceCache,
         dataType: "jsonp",
         jsonp: "callback",
         async: true,
